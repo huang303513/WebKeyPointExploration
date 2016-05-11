@@ -6,3 +6,5 @@ IOS的调试技巧和instruments的使用。
 [LLDB调试命令初探](http://www.starfelix.com/blog/2014/03/17/lldbdiao-shi-ming-ling-chu-tan/)
 
 [与调试器共舞 - LLDB 的华尔兹](http://objccn.io/issue-19-2/)
+
+[iOS中教你快速掌握LLDB调试技巧](http://m.blog.csdn.net/article/details?id=51316510&from=timeline&isappinstalled=0)
