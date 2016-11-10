@@ -1,10 +1,3 @@
-# Debug-Instruments
-IOS的调试技巧和instruments的使用。
+#html、css、javascript关键点、重点、难点探索
 
-[iOS各种调试技巧豪华套餐](http://www.cnblogs.com/daiweilai/p/4421340.html)
-
-[LLDB调试命令初探](http://www.starfelix.com/blog/2014/03/17/lldbdiao-shi-ming-ling-chu-tan/)
-
-[与调试器共舞 - LLDB 的华尔兹](http://objccn.io/issue-19-2/)
-
-[iOS中教你快速掌握LLDB调试技巧](http://m.blog.csdn.net/article/details?id=51316510&from=timeline&isappinstalled=0)
+[JS原生一步步实现前端路由和单页面应用](https://segmentfault.com/a/1190000007422616)</br>
