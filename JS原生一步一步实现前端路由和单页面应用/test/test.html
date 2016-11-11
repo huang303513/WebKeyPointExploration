@@ -1,0 +1,65 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <title>test hash route</title>
+    <script type="text/javascript" src="../route.js"></script>
+    <style type="text/css">
+    body {
+        font: 10.5pt arial;
+        color: #4d4d4d;
+        line-height: 150%;
+        width: 90%;
+    }
+    
+    a {
+        font-size: 16px;
+        padding: 10px
+    }
+    
+    #content {
+        font-size: 20px;
+        font-weight: bold;
+        padding: 20px
+    }
+    </style>
+</head>
+
+<body>
+    <a href="#/one?type=one">异步加载第一个</a>
+    <a href="#/two?type=two">异步加载第二个</a>
+    <a href="#/three?type=three">异步加载第三个</a>
+    <a href="#/four?type=four">同步加载第四个</a>
+    <div id="content">
+        <p style="color:#333">默认首页内容</p>
+    </div>
+    <script type="text/javascript">
+	    spaRouters.map('/one', function(transition) {
+	        spaRouters.asyncFun('./one.js', transition)
+	    })
+	    spaRouters.map('/two', function(transition) {
+	        spaRouters.asyncFun('./two.js', transition)
+	    })
+	    spaRouters.map('/three', function(transition) {
+	        spaRouters.asyncFun('./three.js', transition)
+	    })
+	    spaRouters.map('/four', function(transition) {
+	        spaRouters.syncFun(function(transition) {
+	            document.getElementById("content").innerHTML = '<p style="color:#DD8C6F;">第四个页面' + JSON.stringify(transition) + '</p>'
+	        }, transition)
+	    })
+	    spaRouters.beforeEach(function(transition) {
+	        console.log('切换之前dosomething')
+	        setTimeout(function() {
+	            //模拟切换之前延迟，比如说做个异步登录信息验证
+	            transition.next()
+	        }, 100)
+	    })
+	    spaRouters.afterEach(function(transition) {
+	        console.log("切换之后dosomething")
+	    })
+	    spaRouters.init()
+    </script>
+</body>
+
+</html>
