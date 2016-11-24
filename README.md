@@ -8,3 +8,4 @@
 [Javascript异步编程的4种方法](http://www.ruanyifeng.com/blog/2012/12/asynchronous%EF%BC%BFjavascript.html)</br>
 [JavaScript 运行机制详解：再谈Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)</br>
 [JavaScript的单线程和异步](https://zhuanlan.zhihu.com/p/23659122)</br>
+[JavaScript单线程详解](https://segmentfault.com/a/1190000007570380?utm_source=tuicool&utm_medium=referral)</br>
