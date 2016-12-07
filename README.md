@@ -9,3 +9,4 @@
 [JavaScript 运行机制详解：再谈Event Loop](http://www.ruanyifeng.com/blog/2014/10/event-loop.html)</br>
 [JavaScript的单线程和异步](https://zhuanlan.zhihu.com/p/23659122)</br>
 [JavaScript单线程详解](https://segmentfault.com/a/1190000007570380?utm_source=tuicool&utm_medium=referral)</br>
+[jsonp 的原理与实现](https://gold.xitu.io/entry/58466c218e450a006c160870)</br>
