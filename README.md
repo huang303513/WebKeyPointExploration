@@ -10,3 +10,4 @@
 [JavaScript的单线程和异步](https://zhuanlan.zhihu.com/p/23659122)</br>
 [JavaScript单线程详解](https://segmentfault.com/a/1190000007570380?utm_source=tuicool&utm_medium=referral)</br>
 [jsonp 的原理与实现](https://gold.xitu.io/entry/58466c218e450a006c160870)</br>
+[彻底弄懂 Http 缓存机制 - 基于缓存策略三要素分解法](https://mp.weixin.qq.com/s/qOMO0LIdA47j3RjhbCWUEQ)</br>
