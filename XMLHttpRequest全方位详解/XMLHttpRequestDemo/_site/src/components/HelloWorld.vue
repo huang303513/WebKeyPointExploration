@@ -1,27 +1,14 @@
 <template>
 	<div class="hello">
-		<div>具体可以通过抓包软件或者google浏览器控制台查看整个流程</div>
 		<ul>
 			<li>
 				<a @click="getRequest">
-		              get的CORS请求测试
+		              get请求
 		        </a>
 			</li>
 			<li>
 				<a @click="postRequest">
-		              post的CORS请求测试
-		        </a>
-			</li>
-		</ul>
-		<ul>
-			<li>
-				<a @click="getRequest">
-		              get的CORS请求测试
-		        </a>
-			</li>
-			<li>
-				<a @click="postRequest">
-		              post的CORS请求测试
+		              post请求
 		        </a>
 			</li>
 		</ul>
