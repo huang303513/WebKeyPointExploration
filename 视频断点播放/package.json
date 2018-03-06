@@ -1,0 +1,16 @@
+{
+  "name": "videoplay",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "url": "0.11.0",
+    "zlib": "1.0.5"
+  }
+}
