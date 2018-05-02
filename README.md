@@ -54,3 +54,5 @@
 [webpack入门（六）——html-webpack-plugin](http://blog.csdn.net/keliyxyz/article/details/51513114)</br>
 [webpack loader 列表](http://blog.csdn.net/keliyxyz/article/details/51649429)</br>
 [html-webpack-plugin](http://www.8dou5che.com/2016/12/22/html-webpack-plugin/)</br>
+
+[webpack4-用之初体验，一起敲它十一遍](https://juejin.im/post/5adea0106fb9a07a9d6ff6de)</br>
