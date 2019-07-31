@@ -1,0 +1,48 @@
+@import 'define';
+#cm-header {
+    height: @headerHeight;
+    background-color: @blue;
+    color: @white;
+    .cm-page-title {
+        line-height: @headerHeight;
+        font-size: 18px;
+        text-align: center;
+        position: absolute;
+        left: 88px;
+        right: 88px;
+    }
+}
+
+.cm-header-icon {
+    width: @headerHeight;
+    height: @headerHeight;
+    display: inline-block;
+    text-align: center;
+    // background-color: red;
+}
+
+.cm-header-btn {
+    position: fixed;
+    display: none;
+    padding: 0 10px;
+    cursor: pointer;
+}
+
+.icon-back {
+    line-height: @headerHeight;
+    // background-color: green;
+    &::before {
+        .disido;
+        width: .8rem;
+        height: .8rem;
+        border-left: 2px solid #fff;
+        border-bottom: 2px solid #fff;
+        .rotating;
+        box-sizing: border-box;
+    }
+}
+
+.test {
+    width: 100%;
+    text-align: center;
+}
