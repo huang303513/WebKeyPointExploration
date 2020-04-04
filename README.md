@@ -61,3 +61,15 @@
 ## 2019
 
 [javascript 的深拷贝和浅拷贝](https://juejin.im/post/59ac1c4ef265da248e75892b)</br>
+
+
+## Promise
+
+[Promise的源码实现（完美符合Promise/A+规范）](https://juejin.im/post/5c88e427f265da2d8d6a1c84#heading-20)</br>
+[异步编程二三事 | Promise/async/Generator实现原理解析](https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc)</br>
+
+
+## Hooks
+
+[一文彻底搞懂react hooks的原理和实现](https://juejin.im/post/5daee8b7e51d4524ce222825)</br>
+[React Hooks 原理](https://github.com/brickspert/blog/issues/26)</br>
