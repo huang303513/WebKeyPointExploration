@@ -2,9 +2,40 @@ import React, { useCallback } from "react";
 import "./App.css";
 import logo from "./logo.svg";
 import { testGenerator, testGeneratorV2 } from './asyncawait';
-const Promise = require("./promise");
+const ES6Promise = require('./promise/index.es6.js');
+const Promise = require("./promise/index.js");
 
 function App() {
+
+  const TestES6Promise = useCallback(() => {
+    console.warn("====Promise  ES6 Test===");
+    const p1 = new ES6Promise((resolve, reject) => {
+      resolve(1); //同步executor测试
+    });
+  
+    p1.then((res) => {
+      console.log(res);
+      return 2; //链式调用测试
+    })
+      .then() //值穿透测试
+      .then((res) => {
+        console.log(res);
+        return new ES6Promise((resolve, reject) => {
+          resolve(3); //返回Promise测试
+        });
+      })
+      .then((res) => {
+        console.log(res);
+        throw new Error("reject测试"); //reject测试
+      })
+      .then(
+        () => {},
+        (err) => {
+          console.log(err);
+        }
+      );
+  }, []);
+
   const TestPromise = useCallback(() => {
     console.warn("====Promise Test===");
     new Promise((resolve, reject) => {
@@ -58,61 +89,61 @@ function App() {
         console.warn(err);
       }
     );
-
-    var p = Promise.all([]); // will be immediately resolved
-    var p2 = Promise.all([1337, "hi"]); // non-promise values will be ignored, but the evaluation will be done asynchronously
-    console.log("p=======>" + p);
-    console.log("p2=======>" + p2);
-    setTimeout(function() {
-      console.log("the stack is now empty");
-      console.log(p2);
-    });
   }, []);
 
+  // var p = Promise.all([]); // will be immediately resolved
+  // var p2 = Promise.all([1337, "hi"]); // non-promise values will be ignored, but the evaluation will be done asynchronously
+  // console.log("p=======>" + JSON.stringify(p));
+  // console.log("p2=======>" + JSON.stringify(p2));
+  // setTimeout(function() {
+  //   console.log("the stack is now empty");
+  //   console.log(p2);
+  // });
+
   const TestPromiseRace = useCallback(() => {
-    Promise.race([
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          resolve(100);
-        }, 1000);
-      }),
-      undefined,
-      new Promise((resolve, reject) => {
-        setTimeout(() => {
-          reject(100);
-        }, 100);
-      })
-    ]).then(
-      data => {
-        console.log("success ", data);
-      },
-      err => {
-        console.log("err ", err);
-      }
-    );
+    // Promise.race([
+    //   new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       resolve(100);
+    //     }, 1000);
+    //   }),
+    //   undefined,
+    //   new Promise((resolve, reject) => {
+    //     setTimeout(() => {
+    //       reject(100);
+    //     }, 100);
+    //   })
+    // ]).then(
+    //   data => {
+    //     console.log("success ", data);
+    //   },
+    //   err => {
+    //     console.log("err ", err);
+    //   }
+    // );
 
     Promise.race([
       new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve(100);
+          resolve('resolved 1000');
         }, 1000);
       }),
       new Promise((resolve, reject) => {
         setTimeout(() => {
-          resolve(200);
+          resolve('rejected 200');
         }, 200);
       }),
       new Promise((resolve, reject) => {
         setTimeout(() => {
-          reject(100);
+          reject('resolved 100');
         }, 100);
       })
     ]).then(
       data => {
-        console.log(data);
+        console.log('===',data);
       },
       err => {
-        console.log(err);
+        console.log('--->',err);
       }
     );
   }, []);
@@ -142,6 +173,9 @@ function App() {
         </a>
         <button className="App-link" onClick={TestPromise}>
           Promise 测试
+        </button>
+        <button className="App-link" onClick={TestES6Promise}>
+          PromiseES6 测试
         </button>
         <button className="App-link" onClick={TestPromiseAll}>
           Promise All 测试

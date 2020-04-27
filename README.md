@@ -42,6 +42,7 @@
 ## Promise
 
 [Promise的源码实现（完美符合Promise/A+规范）](https://juejin.im/post/5c88e427f265da2d8d6a1c84#heading-20)</br>
+[9k字 | Promise/async/Generator实现原理解析](https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc)</br>
 [异步编程二三事 | Promise/async/Generator实现原理解析](https://juejin.im/post/5e3b9ae26fb9a07ca714a5cc)</br>
 
 
@@ -52,4 +53,5 @@
 
 ## 2020
 
-[深入浅出 Babel 上篇：架构和原理 + 实战](https://juejin.im/post/5d94bfbf5188256db95589be)
+[深入浅出 Babel 上篇：架构和原理 + 实战](https://juejin.im/post/5d94bfbf5188256db95589be)</br>
+[ES6 - 箭头函数、箭头函数与普通函数的区别](https://juejin.im/post/5c979300e51d456f49110bf0)</br>
