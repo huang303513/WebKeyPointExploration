@@ -55,3 +55,8 @@
 
 [深入浅出 Babel 上篇：架构和原理 + 实战](https://juejin.im/post/5d94bfbf5188256db95589be)</br>
 [ES6 - 箭头函数、箭头函数与普通函数的区别](https://juejin.im/post/5c979300e51d456f49110bf0)</br>
+
+## TypeScript
+
+[TypeScript 入门教程](https://juejin.im/post/5edd8ad8f265da76fc45362c)</br>
+[TypeScript 泛型及应用](https://juejin.im/post/5ee00fca51882536846781ee)</br>
